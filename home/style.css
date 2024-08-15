@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    margin-top: 50px;
+    font-size: 2em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .recommendation-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    background-color: #007bff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recommendation-button:hover {
+    color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+  }
+  
+  .hollywood-movie {
+    background-color: #007bff;
+  }
+  
+  .indian-movie {
+    background-color: #ff6f00;
+  }
+  
+  .music {
+    background-color: #28a745;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
